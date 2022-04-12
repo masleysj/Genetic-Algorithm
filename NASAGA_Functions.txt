@@ -1,0 +1,29 @@
+Functions:
+
+1) scoreRun
+	This function takes in the score.txt file that is created by the G4BeamLine (symulation) and fix any
+	possible errors such as x^x vs x^y and convert the data to a simular power. This is done to add a dimention
+	to the dataset array. It will copy the top % to be parents of the array to start a new generation.
+
+2) dataDraw
+	Opens data.txt and loads it into an array for reading and prints out
+	I used this to warn for errors
+
+3) arrayFilter
+	creates the new array based off the score data to create the new parents
+
+4) arrayRand
+	Takes the most updated array and adds itself ontop till the array is filled. This is just stacking the top %
+	all the way down the array.
+
+5) arrayFill
+	This function will use the parent data and will randomly change a random ammount of data in the most updated
+	array. This is then tested to see if it fits within the dementions allowed till the new dataset is full of
+	of new data.
+
+6) fileBuild
+	Builds a .txt file that can be put into the simulation to test and create a new score file
+
+7) rand_doubble_int
+	Makes a random number that can be accepted by the arrayRand function
+
